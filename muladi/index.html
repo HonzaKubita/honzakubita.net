@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    body {
+      background:#1b1b1b
+    }
     input[type=text], select, textarea {
       width: 100%;
       padding: 12px;
@@ -16,7 +19,6 @@
       margin-bottom: 16px;
       resize: vertical;
     }
-
     input[type=submit] {
       background-color: #04AA6D;
       color: white;
@@ -25,40 +27,75 @@
       border-radius: 4px;
       cursor: pointer;
     }
-
     input[type=submit]:hover {
       background-color: #45a049;
     }
-
     .container {
       border-radius: 5px;
       background-color: #f2f2f2;
       padding: 20px;
       width: 30%;
+      margin: 50px;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .google__maps, iframe {
+        margin: 0 auto;
+    }
+    iframe {
+        display: block;
+    }
+    @media screen and (max-width: 1250px){
+        iframe {
+            width: 650px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        iframe {
+            width: 450px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        iframe {
+            width: 350px;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        iframe {
+            width: 250px;
+        }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <form name="muladi-cotact-form" netlify>
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-    </form>
+  <div class="center">
+    <div class="container">
+      <form name="muladi-cotact-form" netlify>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div class="google_maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160.1242161455761!2d14.462509611494964!3d50.049066241458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b93941b44c6f9%3A0x23912a86155b7f95!2sPek%C3%A1rensk%C3%A1%201164%2C%20141%2000%20Praha%204-Michle!5e0!3m2!1scs!2scz!4v1646076567254!5m2!1scs!2scz" width="1050px" height="650px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
   <script>
   </script>

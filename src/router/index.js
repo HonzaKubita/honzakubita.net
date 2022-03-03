@@ -31,11 +31,6 @@ const routes = [
     component: projects
   },
   {
-    path: '/SSPS',
-    name: 'ssps',
-    component: ssps
-  },
-  {
     path: '/countdown',
     name: 'countdown',
     component: countdown

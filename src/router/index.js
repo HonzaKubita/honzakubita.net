@@ -5,9 +5,10 @@ import about from '../vue/pages/about.vue'
 import contact from '../vue/pages/contact.vue'
 import projects from '../vue/pages/projects.vue'
 
+import notFound from '../vue/pages/notFound.vue'
+
 import countdown from '../vue/pages/countdown.vue'
 
-import ssps from '../vue/pages/ssps.vue'
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     name: 'countdown',
     component: countdown
   },
+  {
+    path: '*',
+    name: 'Not Found',
+    component: notFound
+  }
 ]
 
 const router = createRouter({

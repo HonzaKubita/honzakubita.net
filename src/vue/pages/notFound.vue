@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="mainDiv">
     <h1>404 Page not found!</h1>
-  <button onClick="window.location.replace('/')">Home</button>
+    <button @click="gotoMainPage">Home</button>
 </div>
 </template>
 
@@ -9,7 +9,10 @@
 
 export default {
   name: 'notFound',
-  components: {
+  methods: {
+    gotoMainPage() {
+        window.location.replace('/');
+    }
   }
 }
 </script>
@@ -19,7 +22,7 @@ h1 {
     color: white;
     font-family: 'Roboto Mono', sans-serif;
 }
-body {
+.mainDiv {
     background: #1b1b1b; /* fallback for old browsers */
     background: linear-gradient(-45deg, #1b1b1b, #282828, #1b1b1b, #282828);
     background-size: 400% 400%;

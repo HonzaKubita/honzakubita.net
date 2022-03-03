@@ -35,7 +35,12 @@ const routes = [
     path: '/countdown',
     name: 'countdown',
     component: countdown
-  }, 
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'notFound',
+    component: notFound
+  }
 ]
 
 const router = createRouter({

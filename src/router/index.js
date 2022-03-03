@@ -36,11 +36,6 @@ const routes = [
     name: 'countdown',
     component: countdown
   },
-  {
-    path: '*',
-    name: 'notFound',
-    component: notFound
-  }
 ]
 
 const router = createRouter({

@@ -35,7 +35,7 @@ const routes = [
     path: '/countdown',
     name: 'countdown',
     component: countdown
-  },
+  }, 
 ]
 
 const router = createRouter({

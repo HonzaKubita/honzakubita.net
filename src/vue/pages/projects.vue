@@ -13,11 +13,12 @@
       <floppyDisk color="blue" link="https://github.com/HonzaKubita/batchChat">batchChat</floppyDisk>
       <floppyDisk color="yellow" link="https://github.com/dumba/t-rex">T-rex Multiplayer</floppyDisk>
     </div>
+  </div>
+  <div class="disk-container1">
     <div class="disk-container2">
       <floppyDisk color="purple" link="https://luacy.net/">Luacy mc server</floppyDisk>
     </div>
   </div>
-  
 </div>
 </template>
 

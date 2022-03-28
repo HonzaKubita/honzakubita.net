@@ -8,6 +8,7 @@ import projects from '../vue/pages/projects.vue'
 import notFound from '../vue/pages/notFound.vue'
 
 import countdown from '../vue/pages/countdown.vue'
+import JSRandomenator from '../vue/pages/JSRandomenator.vue'
 
 
 const routes = [
@@ -36,6 +37,12 @@ const routes = [
     name: 'countdown',
     component: countdown
   },
+  {
+    path: '/randomenator',
+    name: 'randomenator',
+    component: JSRandomenator
+  },
+
   {
     path: '/:pathMatch(.*)*',
     name: 'notFound',

@@ -29,24 +29,24 @@ export default {
     changePage(newPage) {
       this.$router.push(newPage);
     }
-  }
+  },
 }
 </script>
 
 <style>
 .main-div {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   font-size: 1.5em;
 }
 .mobile-menu-subtitle {
-  color: white;
   font-size: 2em;
   font-family: 'Roboto Mono', sans-serif;
   background: gray;
+  color: white;
   padding: 20px;
   border-radius: 10px;
   transition: all 0.25s;

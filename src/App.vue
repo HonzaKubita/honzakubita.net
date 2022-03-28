@@ -4,10 +4,7 @@
 
 <style>
 body {
-  background: #1b1b1b; /* fallback for old browsers */
-	background: linear-gradient(-45deg, #1b1b1b, #282828, #1b1b1b, #282828);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  background: #1b1b1b;
   height: 100%;
   overflow: hidden;
 }
@@ -44,7 +41,11 @@ img {
   font-size: 2em;
   font-family: 'Roboto Mono', sans-serif;
 }
-
+.main-sub-subtitle {
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Roboto Mono', sans-serif;
+}
 .directory-back {
   cursor: pointer;
   transition: all 0.25s;
@@ -59,7 +60,7 @@ img {
 @media screen and (max-width: 700px) {
   body {
     height: 100%;
-    overflow: visible;
+    overflow: "visible";
   }
 }
 </style>

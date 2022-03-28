@@ -4,19 +4,24 @@
     <h1 @click="back" class="main-title directory-back">C:\webpage</h1>
     <h1 class="main-title">\projects</h1>
   </div>
-  <div class="disk-container1">
-    <div class="disk-container2">
-      <floppyDisk color="red" link="countdown">New Year Countdown</floppyDisk>
-      <floppyDisk color="green" link="https://github.com/HonzaKubita/_Chess">_Chess</floppyDisk>
+  <div class="disk-main-container">
+    <div class="disk-container1">
+      <div class="disk-container2">
+        <floppyDisk color="red" link="countdown">New Year Countdown</floppyDisk>
+        <floppyDisk color="green" link="https://github.com/HonzaKubita/_Chess">_Chess</floppyDisk>
+      </div>
+      <div class="disk-container2">
+        <floppyDisk color="blue" link="https://github.com/HonzaKubita/batchChat">batchChat</floppyDisk>
+        <floppyDisk color="yellow" link="https://github.com/dumba/t-rex">T-rex Multiplayer</floppyDisk>
+      </div>
     </div>
-    <div class="disk-container2">
-      <floppyDisk color="blue" link="https://github.com/HonzaKubita/batchChat">batchChat</floppyDisk>
-      <floppyDisk color="yellow" link="https://github.com/dumba/t-rex">T-rex Multiplayer</floppyDisk>
-    </div>
-  </div>
-  <div class="disk-container1">
-    <div class="disk-container2">
-      <floppyDisk color="purple" link="https://luacy.net/">Luacy mc server</floppyDisk>
+    <div class="disk-container1">
+      <div class="disk-container2">
+        <floppyDisk color="purple" link="https://luacy.net/">Luacy mc server</floppyDisk>
+      </div>
+      <div class="disk-container2">
+        <floppyDisk color="red" link="https://honzakubita.net/randomenator">JS randomenator</floppyDisk>
+      </div>
     </div>
   </div>
 </div>
@@ -34,18 +39,18 @@ export default {
     back() {
       this.$router.push('/');
     }
-  }
+  },
 }
 </script>
 
 <style>
 .projects-main-div {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: visible;
 }
 .disk-container1 {
   display: flex;

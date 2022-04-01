@@ -60,7 +60,7 @@ img {
 @media screen and (max-width: 700px) {
   body {
     height: 100%;
-    overflow: "visible";
+    overflow: visible;
   }
 }
 </style>

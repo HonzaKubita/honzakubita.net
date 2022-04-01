@@ -1,13 +1,13 @@
 <template>
 <div>
-  <h1 class="google-roboto-1" id="h1"> </h1>
+  <h1 class="google-roboto-1" id="h1">Loading...</h1>
   <noscript>This website requires javascript to work properly please eneable javascript to continue.</noscript>
 </div>
 </template>
 
 <script>
-/*
-var countDownDate = new Date("Dec 31, 2021 12:05:00").getTime();
+
+let countDownDate = new Date("Dec 31, 2021 12:05:00").getTime();
 const interval = setInterval(countDown, 1000);
 
 function countDown() {
@@ -59,9 +59,9 @@ function countDown() {
       clearInterval(interval);
   }
 }
-*/
+
 export default {
-  name: 'mail',
+  name: 'countdown',
 }
 </script>
 <style>

@@ -2,6 +2,10 @@
   <router-view/>
 </template>
 
+<script>
+console.log("%cYou're not welcome here", 'font-size: 40px; color: red; font-weight: bold;');
+</script>
+
 <style>
 body {
   background: #1b1b1b;

@@ -10,6 +10,11 @@ import notFound from '../vue/pages/notFound.vue'
 import countdown from '../vue/pages/countdown.vue'
 import JSRandomenator from '../vue/pages/JSRandomenator.vue'
 
+import labs from '../vue/pages/labs/labs.vue'
+import winXP from '../vue/pages/labs/winXP.vue'
+
+import secret from '../vue/pages/secret.vue'
+
 
 const routes = [
   {
@@ -41,6 +46,23 @@ const routes = [
     path: '/randomenator',
     name: 'randomenator',
     component: JSRandomenator
+  },
+  {
+    path: '/labs',
+    name: 'labs',
+    component: labs
+  },
+  {
+    path: '/labs/winXP',
+    name: 'winXP',
+    component: winXP
+  },
+
+
+  {
+    path: '/supersecretlocationonmywebsite',
+    name: 'secret',
+    component: secret
   },
 
   {

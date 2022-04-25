@@ -3,6 +3,8 @@
   <div class="directory-title-container">
     <h1 @click="back" class="main-title directory-back">C:\webpage</h1>
     <h1 class="main-title">\contact</h1>
+    <!-- Ok you want it, i'll let you have it. Here have this 'Super' 'Secret' button -->
+    <!-- <button onclick="location.replace('/supersecretlocationonmywebsite')">Super Secret Button</button> -->
   </div>
   <div class="contact-components-container">
     <github/>

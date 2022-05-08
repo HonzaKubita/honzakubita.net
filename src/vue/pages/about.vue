@@ -11,9 +11,11 @@
 </template>
 
 <script>
-function calculateAge(dob) { 
-  var diff_ms = Date.now() - dob.getTime();
-  var age_dt = new Date(diff_ms); 
+
+function calculateAge(yr, mo, dy) {
+  let dob = new Date(yr, mo - 1, dy);
+  let diff_ms = Date.now() - dob.getTime();
+  let age_dt = new Date(diff_ms); 
   
   return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
@@ -24,7 +26,7 @@ export default {
   },
   computed: {
     aboutText() {
-      let age = calculateAge(new Date (2006, 11, 4));
+      let age = calculateAge(2006, 4, 11);
       return "Hi my name is Honza and I'm " + age + " years old. (<- Automatically calculated. I could be dead by now). I've been interested in programming since I was about 7-8 years old, but of course back then I didn't know anything about actual programming. I was building things with lego mindstorms, but after some time it just wasn't enough, so I started learning more complicated things. I started learning BATCH in which I created my first game that let you play rock, paper scissors, against your own pc. Now my favorite programming languages are Python and JS, and I'm focused on front-end development (vue.js).";
     }
   },

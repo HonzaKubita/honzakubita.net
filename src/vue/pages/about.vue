@@ -2,7 +2,7 @@
 <div class="about-main-div">
   <div class="directory-title-container">
     <h1 @click="back" class="main-title directory-back">/usr/webpage</h1>
-    <h1 class="main-title">about</h1>
+    <h1 class="main-title">/about</h1>
   </div>
   <div class="about-subtitle-container">
     <p class="about-subtitle">{{ aboutText }}</p>

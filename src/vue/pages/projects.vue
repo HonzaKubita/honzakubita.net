@@ -2,7 +2,7 @@
 <div class="projects-main-div">
   <div class="directory-title-container">
     <h1 @click="back" class="main-title directory-back">/usr/webpage</h1>
-    <h1 class="main-title">projects</h1>
+    <h1 class="main-title">/projects</h1>
   </div>
   <div class="disk-main-container">
     <div class="disk-container1">

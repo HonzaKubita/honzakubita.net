@@ -2,7 +2,7 @@
 <!-- I told you you are not welcome here -->
 <div class="main-div">
   <div id="mainTextDiv" class="main-text-div">
-    <h1 class="main-title">C:\webpage</h1>
+    <h1 class="main-title">/usr/webpage</h1>
   </div>
   <div class="cable-div">
     <cables/>

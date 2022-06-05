@@ -3,7 +3,7 @@
   <img src="images/telephone_handle.png" class="phone-handle">
   <img src="images/telephone_body.png" class="phone-body">
   <p class="telephone-subtitle">Phone</p>
-  <p class="telephone-phonenumber">732 754 149</p>
+  <a class="telephone-phonenumber" href="tel:732754149">732 754 149</a>
 </div>
 </template>
 

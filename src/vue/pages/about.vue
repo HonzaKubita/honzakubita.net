@@ -6,14 +6,14 @@
   </div>
   <div class="about-console">
     <div class="about-console-top">
-      <p>guest@server:~/usr/webpage</p>
+      <p>guest@server:~/usr/webpage/about</p>
     </div>
     <div class="about-console-content">
-      <p>guest@server:~/usr/webpage$ about.sh</p>
+      <p>guest@server:~/usr/webpage/about$ about.sh</p>
       <br>
       <p>{{ aboutText }}</p>
       <br>
-      <p>guest@server:~/usr/webpage$ {{ cursor }}</p>
+      <p>guest@server:~/usr/webpage/about$ {{ cursor }}</p>
     </div>
   </div>
 </div>

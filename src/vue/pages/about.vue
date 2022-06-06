@@ -9,7 +9,7 @@
       <p>guest@server:~/usr/webpage/about</p>
     </div>
     <div class="about-console-content">
-      <p>guest@server:~/usr/webpage/about$ about.sh</p>
+      <p>guest@server:~/usr/webpage/about$ ./about.sh</p>
       <br>
       <p>{{ aboutText }}</p>
       <br>
@@ -39,7 +39,7 @@ export default {
   computed: {
     aboutText() {
       let age = calculateAge(2006, 4, 11);
-      return "Hi my name is Honza and I'm " + age + " years old. (<- Automatically calculated. I could be dead by now). I've been interested in programming since I was about 7-8 years old, but of course back then I didn't know anything about actual programming. I was building things with lego mindstorms, but after some time it just wasn't enough, so I started learning more complicated things. I started learning BATCH in which I created my first game that let you play rock, paper scissors, against your own pc. Now my favorite programming languages are Python and JS, and I'm focused on front-end development (vue.js).";
+      return "Hi my name is Honza and I'm " + age + " years old. (<- Automatically calculated. I could be dead by now). I've been interested in programming and robotics since I was about 7-8 years old, but of course back then I didn't know anything about actual programming. I was building things with lego mindstorms, but after some time it just wasn't enough, so I started learning more complicated things. I started learning BATCH in which I created my first game that let you play rock, paper scissors, against your own pc. Now my favorite programming languages are Python and JS. I'm focused on web front-end development (vue.js), IoT applications (esp, arduino) and robotics.";
     }
   },
   methods: {

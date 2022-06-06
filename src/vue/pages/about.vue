@@ -4,8 +4,17 @@
     <h1 @click="back" class="main-title directory-back">/usr/webpage</h1>
     <h1 class="main-title">/about</h1>
   </div>
-  <div class="about-subtitle-container">
-    <p class="about-subtitle">{{ aboutText }}</p>
+  <div class="about-console">
+    <div class="about-console-top">
+      <p>guest@server:~/usr/webpage</p>
+    </div>
+    <div class="about-console-content">
+      <p>guest@server:~/usr/webpage$ about.sh</p>
+      <br>
+      <p>{{ aboutText }}</p>
+      <br>
+      <p>guest@server:~/usr/webpage$ {{ cursor }}</p>
+    </div>
   </div>
 </div>
 </template>
@@ -22,6 +31,9 @@ function calculateAge(yr, mo, dy) {
 
 export default {
   name: 'about',
+  data: () => ({
+    cursor: "",
+  }),
   components: {
   },
   computed: {
@@ -31,9 +43,19 @@ export default {
     }
   },
   methods: {
+    cursorBlink() {
+      if (this.cursor == "") {
+        this.cursor = "_";
+      } else {
+        this.cursor = "";
+      }
+    },
     back() {
       this.$router.push('/');
     }
+  },
+  created () {
+    setInterval(this.cursorBlink, 500)
   }
 }
 </script>
@@ -51,11 +73,38 @@ export default {
   font-size: 1em;
   font-family: 'Roboto Mono', sans-serif;
 }
-.about-subtitle-container {
-  width: 50%;
+.about-console {
+  width: 700px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: 'Roboto Mono', sans-serif;
 }
+
+.about-console-top {
+  margin: 0px;
+  background-color: #171717;
+}
+.about-console-top p {
+  margin: 0px;
+  padding: 5px;
+  color: #ffffff
+}
+
+.about-console-content {
+  margin: 0px;
+  padding: 5px;
+  background-color: #333232;
+  color: #ffffff;
+  text-align: left;
+  min-height: 300px;
+}
+.about-console-content p {
+  margin: 0px;
+}
+
 @media screen and (max-width: 700px) {
-  .about-subtitle-container {
+  .about-console {
     width: 90%;
   }
 }

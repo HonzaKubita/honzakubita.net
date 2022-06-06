@@ -47,6 +47,7 @@ export default {
 }
 .floppy-disk-label {
   text-align: center;
+  font-size: 1.1em;
   font-family: 'Roboto Mono', sans-serif;
   transform: translateY(+210px);
 }

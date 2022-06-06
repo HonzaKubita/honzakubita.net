@@ -5,24 +5,12 @@
     <h1 class="main-title">/projects</h1>
   </div>
   <div class="disk-main-container">
-    <div class="disk-container1">
-      <div class="disk-container2">
-        <floppyDisk color="red" link="countdown">New Year Countdown</floppyDisk>
-        <floppyDisk color="green" link="https://github.com/HonzaKubita/_Chess">_Chess</floppyDisk>
-      </div>
-      <div class="disk-container2">
-        <floppyDisk color="blue" link="https://github.com/HonzaKubita/batchChat">batchChat</floppyDisk>
-        <floppyDisk color="yellow" link="https://github.com/dumba/t-rex">T-rex Multiplayer</floppyDisk>
-      </div>
-    </div>
-    <div class="disk-container1">
-      <div class="disk-container2">
-        <floppyDisk color="purple" link="https://luacy.net/">Luacy mc server</floppyDisk>
-      </div>
-      <div class="disk-container2">
-        <floppyDisk color="red" link="https://honzakubita.net/randomenator">JS randomenator</floppyDisk>
-      </div>
-    </div>
+    <floppyDisk color="red" link="countdown">New Year Countdown</floppyDisk>
+    <floppyDisk color="green" link="https://github.com/HonzaKubita/_Chess">_Chess</floppyDisk>
+    <floppyDisk color="blue" link="https://github.com/HonzaKubita/batchChat">batchChat</floppyDisk>
+    <floppyDisk color="yellow" link="https://github.com/dumba/t-rex">T-rex Multiplayer</floppyDisk>
+    <floppyDisk color="purple" link="https://luacy.net/">Luacy mc server</floppyDisk>
+    <floppyDisk color="red" link="https://honzakubita.net/randomenator">JS randomenator</floppyDisk>
   </div>
 </div>
 </template>
@@ -52,26 +40,14 @@ export default {
   align-items: center;
   text-align: center;
 }
-.disk-container1 {
+
+.disk-main-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.disk-container2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 1100px) {
-  .disk-container2 {
-    flex-direction: column;
-  } 
-}
-@media screen and (max-width: 550px) {
-  .disk-container1 {
-    flex-direction: column;
-  }
+  max-height: 500px;
+  overflow-y: scroll;
 }
 </style>

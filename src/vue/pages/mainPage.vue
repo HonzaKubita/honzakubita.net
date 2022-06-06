@@ -16,7 +16,6 @@
 <script>
 import cables from '../components/mainPage/cables.vue'
 import mobileCables from '../components/mainPage/mobileCables.vue'
-
 export default {
   name: 'mainPage',
   components: {
@@ -73,7 +72,6 @@ export default {
     margin-bottom: 1rem;
   }
 }
-
 .mobile-menu-content {
   max-height: 0;
   transition: max-height 0.3s ease-out;

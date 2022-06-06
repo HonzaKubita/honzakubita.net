@@ -12,7 +12,6 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -24,7 +23,6 @@ body {
 		background-position: 0% 50%;
 	}
 }
-
 img {
   user-drag: none;
   user-select: none;

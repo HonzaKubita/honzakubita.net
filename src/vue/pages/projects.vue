@@ -50,4 +50,10 @@ export default {
   max-height: 500px;
   overflow-y: scroll;
 }
+
+@media screen and (max-width: 700px) {
+  .disk-main-container {
+    max-height: 100%;
+  }
+}
 </style>

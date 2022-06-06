@@ -20,6 +20,9 @@ export default {
 
 <style>
 .github-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 50px;
   text-align: center;
   cursor: pointer;

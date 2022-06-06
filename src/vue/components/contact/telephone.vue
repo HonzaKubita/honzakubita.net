@@ -1,9 +1,9 @@
 <template>
-<div class="telephone-container">
+<div class="telephone-container" @click="callMe">
   <img src="images/telephone_handle.png" class="phone-handle">
   <img src="images/telephone_body.png" class="phone-body">
   <p class="telephone-subtitle">Phone</p>
-  <a class="telephone-phonenumber" href="tel:732754149">732 754 149</a>
+  <p class="telephone-phonenumber">+420 732 754 149</p>
 </div>
 </template>
 
@@ -11,6 +11,11 @@
 
 export default {
   name: 'phone',
+  methods: {
+    callMe() {
+      window.open("tel:+420732754149", "_blank").focus();
+    }
+  }
 }
 </script>
 
@@ -18,6 +23,8 @@ export default {
 .telephone-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 50px;
   text-align: center;
   cursor: pointer;
@@ -42,9 +49,10 @@ export default {
   transform: translateY(-150px);
 }
 .telephone-phonenumber {
+  text-decoration: none;
   color: white;
   font-size: 1em;
   font-family: 'Roboto Mono', sans-serif;
-  transform: translateY(-162px);
+  transform: translateY(-150px);
 }
 </style>

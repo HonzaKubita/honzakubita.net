@@ -20,8 +20,11 @@ export default {
 
 <style>
 .mail-container {
+  display: flex;
+  flex-direction: column;
   margin: 50px;
   text-align: center;
+  align-items: center;
   cursor: pointer;
 }
 .mail-subtitle {
@@ -38,6 +41,7 @@ export default {
 }
 .mail-mailtext {
   color: white;
+  text-decoration: none;
   font-size: 1em;
   font-family: 'Roboto Mono', sans-serif;
 }

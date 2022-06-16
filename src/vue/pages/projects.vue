@@ -46,7 +46,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-height: 500px;
+  max-height: 80vh;
   overflow-y: scroll;
 }
 

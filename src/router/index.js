@@ -1,15 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+
+// Main website imports
 import home from '../vue/pages/mainPage.vue'
 import about from '../vue/pages/about.vue'
 import contact from '../vue/pages/contact.vue'
 import projects from '../vue/pages/projects.vue'
 
+// 404
 import notFound from '../vue/pages/notFound.vue'
 
+// Projects hosted on website
 import countdown from '../vue/pages/countdown.vue'
 import JSRandomenator from '../vue/pages/JSRandomenator.vue'
 
+// Labs imports
 import labs from '../vue/pages/labs/labs.vue'
 import winXP from '../vue/pages/labs/winXP.vue'
 
@@ -47,6 +52,8 @@ const routes = [
     name: 'randomenator',
     component: JSRandomenator
   },
+
+  // Labs routes
   {
     path: '/labs',
     name: 'labs',

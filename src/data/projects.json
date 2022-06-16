@@ -1,0 +1,22 @@
+[
+  {
+    "title": "New year countdown",
+    "link": "/countdown",
+    "color": "red"
+  },
+  {
+    "title": "batchChat",
+    "link": "https://github.com/HonzaKubita/batchChat",
+    "color": "green"
+  },
+  {
+    "title": "T-rex multiplayer",
+    "link": "https://github.com/dumba/t-rex",
+    "color": "yellow"
+  },
+  {
+    "title": "kazdykrok.cz",
+    "link": "https://kazdykrok.netlify.app",
+    "color": "blue"
+  }
+]

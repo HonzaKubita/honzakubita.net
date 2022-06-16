@@ -5,21 +5,20 @@
     <h1 class="main-title">/projects</h1>
   </div>
   <div class="disk-main-container">
-    <floppyDisk color="red" link="countdown">New Year Countdown</floppyDisk>
-    <floppyDisk color="green" link="https://github.com/HonzaKubita/_Chess">_Chess</floppyDisk>
-    <floppyDisk color="blue" link="https://github.com/HonzaKubita/batchChat">batchChat</floppyDisk>
-    <floppyDisk color="yellow" link="https://github.com/dumba/t-rex">T-rex Multiplayer</floppyDisk>
-    <floppyDisk color="purple" link="https://luacy.net/">Luacy mc server</floppyDisk>
-    <floppyDisk color="red" link="https://honzakubita.net/randomenator">JS randomenator</floppyDisk>
+    <floppyDisk v-for="data in projectsData" :color="data.color" :link="data.link">{{ data.title }}</floppyDisk>
   </div>
 </div>
 </template>
 
 <script>
 import floppyDisk from '../components/floppyDisk.vue'
+import porjectsData from '../../data/projects.json'
 
 export default {
   name: 'projects',
+  data: () => ({
+    projectsData: porjectsData
+  }),
   components: {
     floppyDisk
   },

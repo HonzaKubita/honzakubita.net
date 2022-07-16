@@ -17,6 +17,7 @@ import JSRandomenator from '../vue/pages/JSRandomenator.vue'
 // Labs imports
 import labs from '../vue/pages/labs/labs.vue'
 import winXP from '../vue/pages/labs/winXP.vue'
+import soap from '../vue/pages/labs/soap.vue'
 
 import secret from '../vue/pages/secret.vue'
 
@@ -63,6 +64,11 @@ const routes = [
     path: '/labs/winXP',
     name: 'winXP',
     component: winXP
+  },
+  {
+    path: '/labs/soap',
+    name: 'soap',
+    component: soap
   },
 
 

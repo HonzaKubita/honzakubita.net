@@ -2,7 +2,10 @@
 
 <div class="basic-main">
 
-  <textarea v-model="input"></textarea>
+  <div>
+    <h1>Input</h1>
+    <textarea v-model="input"></textarea>
+  </div>
 
   <div>
     <input v-model="mode" type="radio" value="encrypt">
@@ -14,7 +17,10 @@
     <button @click="convert">Convert</button>
   </div>
 
-  <textarea v-model="output" disabled></textarea>
+  <div>
+    <h1>Output</h1>
+    <textarea v-model="output"></textarea>
+  </div>
 
 </div>
 
@@ -24,8 +30,13 @@
 <script>
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+function isNum(val) {
+    return /^-?\d+$/.test(val);
+}
+
 function encrypt(text) {
-  let output = '';
+  text = text.toLowerCase();
+  let output = [];
   text.split('').forEach(symbol => {
     if (letters.includes(symbol)) {
       output.push(letters.indexOf(symbol) + 1);
@@ -37,15 +48,15 @@ function encrypt(text) {
 }
 
 function decrypt(text) {
-  let output = '';
+  let output = [];
   text.split(',').forEach(number => {
-    try {
-      output.push(letters[number]);
-    } catch {
+    if (!isNum(number)) {
       output.push(number);
+    } else {
+      output.push(letters[number - 1]);
     }
   })
-  return output.toString().replace(',', '');
+  return output.toString().replaceAll(',', '');
 }
 
 export default {
@@ -72,10 +83,26 @@ export default {
 <style>
 
 .basic-main {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.basic-main div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.basic-main textarea {
+  width: 200px;
+  height: 200px;
 }
 
 </style>

@@ -19,6 +19,8 @@ import labs from '../vue/pages/labs/labs.vue'
 import winXP from '../vue/pages/labs/winXP.vue'
 import soap from '../vue/pages/labs/soap.vue'
 
+import cipher_basic from '../vue/pages/labs/cipher/basic.vue'
+
 import secret from '../vue/pages/secret.vue'
 
 
@@ -69,6 +71,11 @@ const routes = [
     path: '/labs/soap',
     name: 'soap',
     component: soap
+  },
+  {
+    path: '/labs/cipher/basic',
+    name: 'cipher_basic',
+    component: cipher_basic
   },
 
 

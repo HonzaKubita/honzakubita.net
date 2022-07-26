@@ -25,6 +25,7 @@
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 function encrypt(text) {
+  let output = '';
   text.split('').forEach(symbol => {
     if (letters.includes(symbol)) {
       output.push(letters.indexOf(symbol) + 1);
@@ -36,6 +37,7 @@ function encrypt(text) {
 }
 
 function decrypt(text) {
+  let output = '';
   text.split(',').forEach(number => {
     try {
       output.push(letters[number]);
@@ -43,7 +45,7 @@ function decrypt(text) {
       output.push(number);
     }
   })
-
+  return output.toString().replace(',', '');
 }
 
 export default {

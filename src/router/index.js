@@ -18,6 +18,7 @@ import JSRandomenator from '../vue/pages/JSRandomenator.vue'
 import labs from '../vue/pages/labs/labs.vue'
 import winXP from '../vue/pages/labs/winXP.vue'
 import soap from '../vue/pages/labs/soap.vue'
+import pga from '../vue/pages/labs/pga.vue'
 
 import cipher_basic from '../vue/pages/labs/cipher/basic.vue'
 
@@ -76,6 +77,11 @@ const routes = [
     path: '/labs/cipher/basic',
     name: 'cipher_basic',
     component: cipher_basic
+  },
+  {
+    path: '/labs/pga',
+    name: 'pga',
+    component: pga
   },
 
 

@@ -32,7 +32,7 @@ export default {
       password =password.replaceAll('0', '%'); // Special characters
       password =password.replaceAll('a', '=');
       password =password.replaceAll('b', '@');
-      password += '&;)'; // Password still may not include enough special characters
+      password += 'Q!&;)'; // Password still may not include enough special characters
       this.password = password;
     },
     copy() {

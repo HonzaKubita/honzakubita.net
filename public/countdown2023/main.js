@@ -26,14 +26,14 @@ let objects = [];
 let prevUpdateTime = countdown.getRemainingTime();
 
 let currNumbers = [
-  new NumberObject(0, 20, 0, 0),
-  new NumberObject(120, 20, 0, 0),
+  new NumberObject(0, 20, 0, 1),
+  new NumberObject(120, 20, 0, 1),
 
-  new NumberObject(300, 20, 0, 0),
+  new NumberObject(300, 20, 0, 2),
   new NumberObject(420, 20, 0, 0),
 
-  new NumberObject(600, 20, 0, 0),
-  new NumberObject(720, 20, 0, 0)
+  new NumberObject(600, 20, 0, 2),
+  new NumberObject(720, 20, 0, 3)
 ]
 
 let endText = new EndText(-55, 500, 100);
@@ -41,8 +41,8 @@ let endText = new EndText(-55, 500, 100);
 // Create ground
 
 let grounds = [
-  new Ground(-100, 100, -500, [10, 0, 60], [10, 1200, 2000], false),
-  new Ground(900, 100, -500, [10, 0, -60], [10, 1200, 2000], false)
+  new Ground(-100, 100, -500, [10, 0, 60], [10, 1200, 2000], true),
+  new Ground(900, 100, -500, [10, 0, -60], [10, 1200, 2000], true)
 ]
 
 async function dropAndSpawn(index, newNumber) {

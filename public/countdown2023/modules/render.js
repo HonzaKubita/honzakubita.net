@@ -14,7 +14,7 @@ let textures = {};
 
 function init() {
 
-  scene.background = new THREE.Color( 0x1e1e1e );
+  scene.background = new THREE.Color( 0x010c1f );
 
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.shadowMap.enabled = true;
@@ -37,18 +37,24 @@ function init() {
   // Lights
 
   const light = new THREE.AmbientLight( 0x404040, 2 ); // soft white light
+  light.position.set(400, 0, 500); // Same positon as camera
   scene.add( light );
 
   const pointLight = new THREE.PointLight( 0xfbffc2, 10, 500 );
-  pointLight.position.set( 500, 100, 200 );
-
-  const directionalLight = new THREE.DirectionalLight( 0xfbffc2, 0.5 );
-  directionalLight.position.set( 500, 100, 200 );
-  directionalLight.castShadow = true; // default false
-  scene.add( directionalLight );
-  
+  pointLight.position.set( 200, 200, -100 );
   pointLight.castShadow = true; // default false
   scene.add( pointLight );
+
+  const pointLight2 = new THREE.PointLight( 0xfbffc2, 10, 800 );
+  pointLight2.position.set( 500, -50, 500 );
+  pointLight2.castShadow = true; // default false
+  scene.add( pointLight2 );
+
+  //const directionalLight = new THREE.DirectionalLight( 0xfbffc2, 0.5 );
+  //directionalLight.position.set( 500, 100, 200 );
+  //directionalLight.castShadow = true; // default false
+  //scene.add( directionalLight );
+  
 
   // DEV
 

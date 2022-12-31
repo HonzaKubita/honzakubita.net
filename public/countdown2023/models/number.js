@@ -25,9 +25,15 @@ export default class NumberObject {
 
   addPhysics() {
 
-    this.objects.forEach(object => {
-      object.addPhysics();
-    })
+    for (let i = 0; i < this.objects.length; i++) {
+      setTimeout(() => {
+        this.objects[i].addPhysics();
+      }, 20 * (this.objects.length - i))
+    }
+
+    // this.objects.forEach(object => {
+    //   object.addPhysics();
+    // })
 
     this.hasPhysics = true;
   }

@@ -22,17 +22,22 @@ export default class Ground {
   }
 
   createRenderObject() {
-    this.three.geometry = new THREE.BoxGeometry(1,1,1);
-    this.three.material = new THREE.MeshStandardMaterial( {color: 0x336d9c} );
+    this.three.geometry = new THREE.BoxGeometry(this.size[0], this.size[1], this.size[2]);
+    this.three.material = new THREE.MeshStandardMaterial( { color: 0x00ffff } );
+    //this.three.geometryWireframe = new THREE.WireframeGeometry( this.three.geometry );
+    //this.three.mesh = new THREE.LineSegments( this.three.geometryWireframe );
+    this.three.mesh = new THREE.Mesh( this.three.geometry, this.three.material );
 
-    this.three.mesh = new THREE.Mesh(this.three.geometry, this.three.material);
-
-    this.three.mesh.scale.set(this.size[0], this.size[1], this.size[2]);
-    this.three.mesh.position.set(this.position.x, this.position.y, this.position.z);
-    this.three.mesh.quaternion.copy(this.oimo.body.getQuaternion());
-
+    this.three.mesh.material.color.setHex( 0x01183d);
+    //this.three.mesh.material.depthTest = false;
     //this.three.mesh.material.opacity = 0.5;
     //this.three.mesh.material.transparent = true;
+
+    this.three.mesh.position.x = this.position.x;
+    this.three.mesh.position.y = this.position.y;
+    this.three.mesh.position.z = this.position.z;
+
+    this.three.mesh.quaternion.copy(this.oimo.body.getQuaternion());
 
     this.three.mesh.castShadow = true; //default is false
     this.three.mesh.receiveShadow = true; //default

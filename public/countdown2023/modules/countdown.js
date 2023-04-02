@@ -1,6 +1,6 @@
 // Countdown
 
-const countDownDate = new Date("Jan 1, 2023 00:00:01").getTime();
+const countDownDate = new Date("Jan 1, 2024 00:00:01").getTime();
 //const countDownDate = new Date("Dec 31, 2022 04:38:00").getTime();
 
 const getRemainingTime = () => {
